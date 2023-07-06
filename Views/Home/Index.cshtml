@@ -1,0 +1,36 @@
+﻿@model string
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<div>
+    <h4>Routage conventionnel :</h4>
+    <a asp-action="Say">
+        <button>Say hello</button>
+    </a>
+    <a asp-action="Yell">
+        <button>Yell hello</button>
+    </a>
+</div>
+
+<div>
+    <h4>Routage par attribut :</h4>
+    <a asp-route="say">
+	    <button>Say hello</button>
+    </a>
+    <a asp-route="yell">
+        <button>Yell hello</button>
+    </a>
+</div>
+
+<div>
+    <h4>Resultat : </h4>
+	<p>
+        @Model
+    </p>
+</div>

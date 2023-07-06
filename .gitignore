@@ -1,0 +1,10 @@
+.git/
+.vs/
+bin/
+obj/
+Properties/
+wwwroot/
+Routage.csproj.user
+Routage.sln
+appsettings.json
+appsettings.Development.json
